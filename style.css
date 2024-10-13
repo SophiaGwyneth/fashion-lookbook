@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px #f393a3;
+}
+.Home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.Home a{
+    position: absolute;
+    color: #D4AF37;
+    z-index: 99;
+    text-align: center;
+    text-decoration: none;
+    font-size: 5rem;
+    
+}
+
+h1.logo {
+    margin: 10px;
+    padding: 12px;
+    font-family: 'Georgia', serif; /* Example font for the logo */
+    font-size: 48px;               /* Make it larger */
+    color: #080505;                   /* Darker color */
+    text-transform: uppercase;     /* Make text uppercase */
+    letter-spacing: 2px;           /* Add letter spacing */
+    text-align: center;            /* Center the text */
+}
+h3 {
+    margin: 10px;
+    padding: 12px;
+    font-family: 'Josefin Sans'; /* Different font */
+    font-size: 24px;                  /* Smaller than the logo */
+    color: #2e2929;                      /* Lighter color */
+    font-weight: normal;              /* Normal weight */
+    text-align: center;               /* Center the text */
+    margin-top: -10px;                /* Adjust margin if needed */
+}
+body {
+    margin: 0; /* Remove default margin */
+
+    height: 100vh; /* Make sure body takes full height of the viewport */
+
+    background-image: url("golden\ satin\ Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+ 
+.container {
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    position: relative; /* For positioning the blur effect */
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18, .box19, .box20{
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    box-shadow: 2px 3px 4px;
+    float: left;
+    margin: 0px 10px;
+    position: relative; /* For positioning text */
+    transition: transform 1s, filter 1s; /* Smooth zoom and blur transitions */
+}
+
+.box1 {
+    background-image: url('A\ New\ Take\ on\ Plaid\ -\ Wendy\'s\ Lookbook.jpg');
+}
+
+.box2 {
+    background-image: url('Julia\ Brown\ Plaid\ Mesh\ Maxi\ Skirt.jpg');
+}
+
+.box3 {
+    background-image: url('Lana\ Condor\ Wows\ in\ a\ Plunging\ Dress\ With\ a\ See-Through\,\ Lace\ Neckline.jpg');
+}
+
+.box4 {
+    background-image: url('Ralph\ Lauren\ _\ Iconic\ Style\ _\ Lookbook\ _\ Collection.jpg');
+}
+
+.box5 {
+    background-image: url('Zimmermann\ Fall\ 2024\ Ready-to-Wear\ Collection.jpg');
+}
+
+.box6 {
+    background-image: url('Jacquemus\'\ FW20\ Men\'s\ Lookbook\ Is\ an\ Ode\ to\ Color.jpg');
+}
+
+.box7 {
+    background-image: url('Sunspel\ AW20\ Lookbook.jpg');
+}
+
+.box8 {
+    background-image: url('Boglioli\ 2016\ Fall_Winter\ Campaign\ \(1\).jpg');
+}
+
+.box9 {
+    background-image: url('Louis\ Vuitton\ Resort\ 2025\ Menswear\ Fashion\ Show.jpg');
+}
+
+.box10 {
+    background-image: url('Dior\ Men\ Fall\ 2022\ Menswear\ Collection.jpg');
+}
+
+.box11 {
+    background-image: url('Moschino\ Spring\ 2019\ Menswear\ Fashion\ Show.jpg');
+}
+
+.box12 {
+    background-image: url('Ferrari\ Spring\ 2022\ Ready-to-Wear\ Fashion\ Show.jpg');
+}
+
+.box13 {
+    background-image: url('Palomo\ Spain\ Fall\ 2020.jpg');
+}
+
+.box14 {
+    background-image: url('Marine\ Serre\ Spring\ 2025\ Menswear\ Collection.jpg');
+}
+
+.box15 {
+    background-image: url('met\ gala.jpg');
+}
+
+.box16 {
+    background-image: url('Chiara\ Boni\ La\ Petite\ Robe\ Fall\ 2024\ Ready-to-Wear\ Collection.jpg');
+}
+
+.box17 {
+    background-image: url('Amiri\ Spring\ 2024\ Menswear\ Collection.jpg');
+}
+
+.box18 {
+    background-image: url('VALENTINO\ Fall\ Winter\ 2022_23\ Couture\ Collection.jpg');
+}
+
+.box19 {
+    background-image: url('Alexis\ Mabille\ Spring\ 2021\ Couture\ Brings\ Divine\ Joy\ I\ DreaminLace_com.jpg');
+}
+
+.box20 {
+    background-image: url('Juun_J\ Spring\ 2018\ Menswear\ Fashion\ Show.jpg');
+}
+
+.box:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover, .box18:hover, .box19:hover, .box20:hover{
+    transform: scale(1.3); /* Zoom effect */
+    filter: blur(0); /* Unblur when hovered */
+    z-index: 2;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Slight overlay */
+    z-index: -1;
+    transition: backdrop-filter 1s;
+}
+
+.container:hover::before {
+    backdrop-filter: blur(10px); /* Background blur when hovering over any box */
+}
+
+/* Text styling */
+.text {
+    position: absolute;
+    top: 50%;
+    bottom: 270px; /* Position the text to the right of the box */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.box:hover .text {
+    opacity: 1; /* Show text on hover */
+}
+
+
+.btn {
+    font-family: 'Georgia', serif;
+    margin: 70px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #002f4b, #006400, #007200, #ef8282,
+      #eddfdf, #723838, #d02831, #500010
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  .btn:hover::before {
+    opacity: 1;
+  }
+  .btn:active:after {
+    background: transparent;
+  }
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }
